@@ -49,7 +49,7 @@ cmd(
 
       // Song metadata description
       let desc = `
-*❤️ROBIN SONG DOWNLOADER❤️*
+*❤️PINK_QUEEN_MD SONG DOWNLOADER❤️*
 
 👻 *title* : ${data.title}
 👻 *description* : ${data.description}
@@ -58,7 +58,7 @@ cmd(
 👻 *views* : ${data.views}
 👻 *url* : ${data.url}
 
-𝐌𝐚𝐝𝐞 𝐛𝐲 𝐒_𝐈_𝐇_𝐈_𝐋_𝐄_𝐋
+𝐌𝐚𝐝𝐞 𝐛𝐲 CHAMINDU 
 `;
 
       // Send metadata thumbnail message
