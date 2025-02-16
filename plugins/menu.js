@@ -85,9 +85,9 @@ ${menu.group}
 ${menu.search}
 
 
-🥶𝐌𝐚𝐝𝐞 𝐛𝐲 𝐒_𝐈_𝐇_𝐈_𝐋_𝐄_𝐋🥶
+🥶𝐌𝐚𝐝𝐞 𝐛𝐲 CHAMINDU 🥶
 
-> ROBIN MENU MSG
+> PINK_QUEEN_MD MENU MSG
 `;
       await robin.sendMessage(
         from,
