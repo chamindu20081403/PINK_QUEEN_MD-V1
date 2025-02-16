@@ -1,6 +1,6 @@
 const { cmd, commands } = require("../command");
 const yts = require("yt-search");
-const { ytmp4 } = require("");
+const { ytmp4 } = require("@vreden/youtube_scraper");
 
 cmd(
   {
