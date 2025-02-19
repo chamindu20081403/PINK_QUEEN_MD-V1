@@ -40,7 +40,7 @@ if (!fs.existsSync(__dirname + "/auth_info_baileys/creds.json")) {
   filer.download((err, data) => {
     if (err) throw err;
     fs.writeFile(__dirname + "/auth_info_baileys/creds.json", data, () => {
-      console.log("Session downloaded ✅");
+      console.log("PINk QUEEN MD Session downloaded ✅");
     });
   });
 }
@@ -61,7 +61,7 @@ async function connectToWA() {
   const prefix = config.PREFIX;
   //===========================
 
-  console.log("Connecting PINK_QUEEN_MD");
+  console.log("Connecting PINk QUEEN MD");
   const { state, saveCreds } = await useMultiFileAuthState(
     __dirname + "/auth_info_baileys/"
   );
@@ -92,21 +92,21 @@ async function connectToWA() {
           require("./plugins/" + plugin);
         }
       });
-      console.log("PINK_QUEEN_MD installed successful ✅");
-      console.log("PINK_QUEEN_MD connected to whatsapp ✅");
+      console.log("PINk QUEEN MD installed successful ✅");
+      console.log("PINk QUEEN MD connected to whatsapp ✅");
 
-      let up = `PINK_QUEEN_MD connected successful ✅`;
-      let up1 = `Hello PINK_QUEEN_MD, I made bot successful`;
+      let up = `PINk QUEEN MD connected successful ✅`;
+      let up1 = `Hello CHAMINDU, I made bot successful ✅`;
 
       robin.sendMessage(ownerNumber + "@s.whatsapp.net", {
         image: {
-          url: `https://raw.githubusercontent.com/chamindu20081403/Chaminduimgandsanda/refs/heads/main/High%20contrast%2C%20low-key%20lighting.%20Warm%20terracotta%20and%20cool%20teal%20tones.%20%20A%20fierce%2C%20graceful%20Pink%20Queen%20with%20rose-gold%20hair%2C%20ethereal%20silk%20gown%2C%20golden%20armor%2C%20and%20pink%20crystal%20staff.%20%20She%20stands%20on%20a%20floating%20kingdom%20against%20a%20pink%20sky.%20Hyperrealistic%2C%20u.jpg`,
+          url: `https://raw.githubusercontent.com/ransika2008/Img-2/refs/heads/main/High%20contrast%2C%20low-key%20lighting.%20Warm%20terracotta%20and%20cool%20teal%20tones.%20%20A%20fierce%2C%20graceful%20Pink%20Queen%20with%20rose-gold%20hair%2C%20ethereal%20silk%20gown%2C%20golden%20armor%2C%20and%20pink%20crystal%20staff.%20%20She%20stands%20on%20a%20floating%20kingdom%20against%20a%20pink%20sky.%20Hyperrealistic%2C%20u.jpg`,
         },
         caption: up,
       });
       robin.sendMessage("94783314361@s.whatsapp.net", {
         image: {
-          url: `https://raw.githubusercontent.com/chamindu20081403/Chaminduimgandsanda/refs/heads/main/High%20contrast%2C%20low-key%20lighting.%20Warm%20terracotta%20and%20cool%20teal%20tones.%20%20A%20fierce%2C%20graceful%20Pink%20Queen%20with%20rose-gold%20hair%2C%20ethereal%20silk%20gown%2C%20golden%20armor%2C%20and%20pink%20crystal%20staff.%20%20She%20stands%20on%20a%20floating%20kingdom%20against%20a%20pink%20sky.%20Hyperrealistic%2C%20u.jpg`,
+          url: `https://raw.githubusercontent.com/ransika2008/Img-2/refs/heads/main/High%20contrast%2C%20low-key%20lighting.%20Warm%20terracotta%20and%20cool%20teal%20tones.%20%20A%20fierce%2C%20graceful%20Pink%20Queen%20with%20rose-gold%20hair%2C%20ethereal%20silk%20gown%2C%20golden%20armor%2C%20and%20pink%20crystal%20staff.%20%20She%20stands%20on%20a%20floating%20kingdom%20against%20a%20pink%20sky.%20Hyperrealistic%2C%20u.jpg`,
         },
         caption: up1,
       });
@@ -122,13 +122,7 @@ async function connectToWA() {
         : mek.message;
     if (
       mek.key &&
-      mek.key.remoteJid === "status@broadcast") if (
-      mek.key &&
-      mek.key.remoteJid === "status@broadcast" &&
-      config.AUTO_READ_STATUS === "true"
-    ) {
-      await robin.readMessages([mek.key]);
-    }
+      mek.key.remoteJid === "status@broadcast") return  
     
     const m = sms(robin, mek);
     const type = getContentType(mek.message);
@@ -239,10 +233,7 @@ async function connectToWA() {
         );
       }
     };
-     if (senderNumber.includes("94783314361")) {
-      if (isReact) return;
-      m.react("👾");
-     }
+
     //work type
     if (!isOwner && config.MODE === "private") return;
     if (!isOwner && isGroup && config.MODE === "inbox") return;
@@ -404,7 +395,7 @@ async function connectToWA() {
   });
 }
 app.get("/", (req, res) => {
-  res.send("hey, PINK_QUEEN_MD started✅");
+  res.send("hey, PINk QUEEN MD started✅");
 });
 app.listen(port, () =>
   console.log(`Server listening on port http://localhost:${port}`)
